@@ -6,8 +6,7 @@ import com.imagenest.entity.ImageEntity;
 import org.mapstruct.Mapper;
 
 @Mapper(
-    componentModel = "spring",
-    uses = {TagMapper.class}
+    componentModel = "spring"
 )
 public interface ImageMapper {
 

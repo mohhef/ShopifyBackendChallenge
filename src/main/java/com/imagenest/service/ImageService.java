@@ -19,16 +19,16 @@ public class ImageService {
   private final ImageRepository imageRepository;
   private final ImageMapper imageMapper;
 
-  public ImageDto uploadImage(ImageDto imageDto,
-      MultipartFile file) throws IOException {
+  public ImageDto uploadImage(MultipartFile file, String description)
+      throws IOException {
+
+    ImageDto imageDto = new ImageDto(file, description);
 
     String fileName = StringUtils.clean(file.getOriginalFilename());
     byte[] data = file.getBytes();
-
     ImageEntity imageEntity = imageMapper.toImageEntity(imageDto);
     imageEntity.setName(fileName);
     imageEntity.setData(data);
-
     return imageMapper.toImageDto(imageRepository.save(imageEntity));
 
   }

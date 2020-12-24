@@ -1,12 +1,10 @@
 package com.imagenest.entity;
 
-import java.util.Set;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
 import javax.persistence.Lob;
-import javax.persistence.ManyToMany;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,7 +18,8 @@ import lombok.Setter;
 public class ImageEntity {
 
   @Id
-  private int id;
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
 
   private String name;
 
@@ -29,17 +28,6 @@ public class ImageEntity {
   @Lob
   private byte[] data;
 
-  @ManyToMany
-  @JoinTable(
-      name = "image_tag",
-      joinColumns = {
-          @JoinColumn(name = "image_id")
-      },
-      inverseJoinColumns = {
-          @JoinColumn(name = "tag_id")
-      }
-  )
-  private Set<TagEntity> tag;
 
 
 }
