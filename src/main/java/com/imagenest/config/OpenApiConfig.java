@@ -13,14 +13,14 @@ public class OpenApiConfig {
     return new OpenAPI()
         .info(
             new Info()
-                .title("SwitchBoard API")
-                .description("SwitchBoard Application")
+                .title("ImageNest API")
+                .description("ImageNest Application")
                 .version("v0.0.1")
                 .license(new License().name("Apache 2.0").url("http://springdoc.org")))
         .externalDocs(
             new ExternalDocumentation()
-                .description("Switchboard Wiki Documentation")
-                .url("https://switchboard.wiki.github.org/docs"));
+                .description("ImageNest Wiki Documentation")
+                .url("https://imagenest.wiki.github.org/docs"));
   }
 
 }

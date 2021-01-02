@@ -16,8 +16,19 @@ import org.springframework.web.multipart.MultipartFile;
 @Builder
 public class ImageDto {
 
+
+  private Long id;
+  private byte[] data;
+
   private MultipartFile file;
 
   private String description;
+  private String imageData;
+
+  public ImageDto(MultipartFile file, String description) {
+    this.file = file;
+    this.description = description;
+  }
+
 
 }

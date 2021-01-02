@@ -6,6 +6,7 @@ import com.imagenest.entity.ImageEntity;
 import com.imagenest.exception.ExceptionType.IoException;
 import com.imagenest.repository.ImageRepository;
 import java.io.IOException;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.codehaus.plexus.util.StringUtils;
@@ -19,6 +20,10 @@ public class ImageService {
 
   private final ImageRepository imageRepository;
   private final ImageMapper imageMapper;
+
+  public List<ImageDto> retrieveImages() {
+    return imageMapper.toImageDtos(imageRepository.findAll());
+  }
 
   public ImageDto uploadImage(MultipartFile file, String description) {
 
