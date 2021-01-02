@@ -51,7 +51,8 @@ allows you to:
 
 ### ImageNest Show Case
 
-<p align="center"><img src="https://github.com/chrisngyn/shopify-file-repo/blob/main/src/static/media/demo.gif" width="80%"></p>
+<p align="center"><img src="https://github.com/mohhef/ShopifyBackendChallenge/blob/main/src/main/resources/static/ImageNest.gif" width="80%"></p>
+
 ### Getting Started
 
 ### Future To-Dos
