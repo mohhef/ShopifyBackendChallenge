@@ -3,6 +3,27 @@
 	xmlns="http://maven.apache.org/POM/4.0.0"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<artifactId>demo</artifactId>
+	<description>Shopify Backend Challenge</description>
+	<groupId>com.imageNest</groupId>
+	<modelVersion>4.0.0</modelVersion>
+	<name>demo</name>
+
+	<parent>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<groupId>org.springframework.boot</groupId>
+		<relativePath/>
+		<version>2.4.1</version> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<java.version>11</java.version>
+		<lombok-version>1.18.16</lombok-version>
+		<mapstruct-version>1.4.1.Final</mapstruct-version>
+		<maven-compiler-plugin-version>3.8.1</maven-compiler-plugin-version>
+	</properties>
+
+	<version>0.0.1-SNAPSHOT</version>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -83,25 +104,6 @@
 			<version>2.4.1</version>
 		</dependency>
 	</dependencies>
-	<description>Shopify Backend Challenge</description>
-	<groupId>com.imageNest</groupId>
-	<modelVersion>4.0.0</modelVersion>
-	<name>demo</name>
 
-	<parent>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<groupId>org.springframework.boot</groupId>
-		<relativePath/>
-		<version>2.4.1</version> <!-- lookup parent from repository -->
-	</parent>
-
-	<properties>
-		<java.version>11</java.version>
-		<lombok-version>1.18.16</lombok-version>
-		<mapstruct-version>1.4.1.Final</mapstruct-version>
-		<maven-compiler-plugin-version>3.8.1</maven-compiler-plugin-version>
-	</properties>
-
-	<version>0.0.1-SNAPSHOT</version>
 
 </project>
