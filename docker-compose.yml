@@ -1,0 +1,39 @@
+# Docker Compose file Reference (https://docs.docker.com/compose/compose-file/)
+
+version: '3.7'
+
+# Define services
+services:
+  # App backend service
+  app-server:
+    # Configuration for building the docker image for the backend service
+    build: .
+    image: spring/imagenest
+    ports:
+      - "8080:8080" # Forward the exposed port 8080 on the container to port 8080 on the host machine
+    restart: always
+    depends_on:
+      - db # This service depends on mysql. Start that first.
+    environment: # Pass environment variables to the service
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3307/imagenest?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+
+  # Database Service (Mysql)
+  db:
+    image: mysql:5.7
+    ports:
+      - "3307:3307"
+    restart: always
+    environment:
+      MYSQL_DATABASE: imagenest
+      MYSQL_USER: callicoder
+      MYSQL_PASSWORD: callicoder
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_TCP_PORT: 3307
+    volumes:
+      - db-data:/var/lib/mysql
+
+# Volumes
+volumes:
+  db-data:

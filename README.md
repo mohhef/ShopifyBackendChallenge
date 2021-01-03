@@ -1,4 +1,4 @@
-# Shopify Backend  Challenge
+# Shopify 2021 Backend Challenge
 
 ## ImageNest
 
@@ -8,7 +8,7 @@
 - [ImageNest Context](#ImageNest-Context)
 - [ImageNest Show Case](#ImageNest-Show-case)
 - [Getting Started](#Getting-Started)
-- [Future To Dos](#To-Dos)
+- [Future To Dos](#Future To-Dos)
 
 ### Problem Statement
 
