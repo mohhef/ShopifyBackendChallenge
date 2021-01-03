@@ -8,7 +8,7 @@
 - [ImageNest Context](#ImageNest-Context)
 - [ImageNest Show Case](#ImageNest-Show-case)
 - [Getting Started](#Getting-Started)
-- [Future To Dos](#Future ToDos)
+- [Improvements](#Improvements)
 
 ### Problem Statement
 
@@ -33,14 +33,14 @@ allows you to:
 
 - Java(Spring Boot)
 
-        The main reason I used java is to show my structural and design skills that can be
+        The main reason I used java is to show my structural and design skills that
         I can easily demostrate in Java.
 
 - Thymeleaf
 
-        I am familiar with front-end frameworks such as React as I have used both React and
-        React Native before. However, I wanted to pick up something new that I did not use before.
-        Thus, i decided to use Thymeleaf which is a server-side java template engine.
+        I am familiar with front-end frameworks such as React. However, I wanted to pick up something new that I did not use before.
+        Thus, i decided to use Thymeleaf which is a server-side java template engine. Thymeleaf is not a framework! I have used HTML,
+        CSS, JS with the help of bootstrap aswell.
 
 - SQL
 
@@ -55,7 +55,7 @@ allows you to:
 
 ### Getting Started
 
-I have utilized docker to ease the installtion of the application and to get started quickly.
+I have utilized Docker to ease the getting started with the application.
 
 Make sure you have installed:
 
@@ -68,7 +68,7 @@ Make sure you have installed:
    of the application and it will create a mysql image.
 3. Navigate to 'localhost:8080/imagenest', have fun!!
 
-### Future ToDos
+### Improvements
 
 - Add a many-to-many tags relationship to allow users to add tags and search images by specific tags
 - Add unit tests, integration tests and possibly system tests
