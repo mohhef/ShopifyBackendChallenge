@@ -8,7 +8,7 @@
 - [ImageNest Context](#ImageNest-Context)
 - [ImageNest Show Case](#ImageNest-Show-case)
 - [Getting Started](#Getting-Started)
-- [Future To Dos](#Future To-Dos)
+- [Future To Dos](#Future ToDos)
 
 ### Problem Statement
 
@@ -68,7 +68,7 @@ Make sure you have installed:
    of the application and it will create a mysql image.
 3. Navigate to 'localhost:8080/imagenest', have fun!!
 
-### Future To-Dos
+### Future ToDos
 
 - Add a many-to-many tags relationship to allow users to add tags and search images by specific tags
 - Add unit tests, integration tests and possibly system tests
