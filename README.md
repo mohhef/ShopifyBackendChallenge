@@ -69,7 +69,7 @@ Make sure you have installed:
 3. Navigate to 'localhost:8080/imagenest', have fun!!
 
 ### Improvements
-
+- Investigate other ways to store images
 - Add a many-to-many tags relationship to allow users to add tags and search images by specific tags
 - Add unit tests, integration tests and possibly system tests
 - Refine backend and frontend structure by better handling unexpected exceptions
