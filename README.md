@@ -55,6 +55,19 @@ allows you to:
 
 ### Getting Started
 
+I have utilized docker to ease the installtion of the application and to get started quickly.
+
+Make sure you have installed:
+
+- Maven (https://maven.apache.org/install.html)
+- Docker-compose (https://docs.docker.com/compose/install/)
+
+1. Run 'mvn package' in the root directory of the application, this will create a jar file in a '
+   target' folder
+2. Run 'docker-compose up' in the root directory of the application, that will create a jdk 11 image
+   of the application and it will create a mysql image.
+3. Navigate to 'localhost:8080/imagenest', have fun!!
+
 ### Future To-Dos
 
 - Add a many-to-many tags relationship to allow users to add tags and search images by specific tags
